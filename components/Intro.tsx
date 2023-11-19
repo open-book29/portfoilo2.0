@@ -11,11 +11,15 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 
 export const Intro = () => {
-  const { ref } = useSectionInView("Home", 0.5)
-  const { setActiveSection, setTimeOfLastClick} = useActiveSectionContext()
+  const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]" id="home" ref={ref}>
+    <section
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      id="home"
+      ref={ref}
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -24,13 +28,13 @@ export const Intro = () => {
             transition={{ type: "tween", duration: 0.2 }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww"
+              src="/me2.jpg"
               width="192"
               height="192"
               quality="95"
               priority={true}
               alt="profile picture"
-              className="h-24 w-24 object-cover border-[0.35rem] rounded-full border-white shadow-xl"
+              className="h-24 w-24 object-top object-cover border-[0.35rem] rounded-full border-white shadow-xl"
             />
           </motion.div>
           <motion.span
@@ -54,10 +58,9 @@ export const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
       >
-        <span className="font-bold">Hello, I&apos;m Ricardo.</span> I&apos;m a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
+        <span className="font-bold">Hello, I&apos;m Anuj.</span> A Computer Science engineer with a passion for {" "}
+        <span className="font-bold">front-end development.</span> I like
+        building <span className="italic">websites & apps</span>. My focus is on{" "}
         <span className="underline">React (Next.js)</span>.
       </motion.h1>
 
@@ -71,26 +74,31 @@ export const Intro = () => {
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
-            setActiveSection("Contact")
-            setTimeOfLastClick(Date.now())
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          Contact me here{" "}
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
-          href="/resume.pdf" download
+          href="/resume.pdf"
+          download
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition borderBlack dark:bg-white/10"
         >
-          Download CV{" "} <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          Download CV{" "}
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
         <a
-          href="https://www.linkedin.com/in/anuj-mourya-2a0a82212/" target="_blank"
+          href="https://www.linkedin.com/in/anuj-mourya-2a0a82212/"
+          target="_blank"
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full outline-none hover:scale-[1.15] active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60"
         >
           <BsLinkedin />
         </a>
         <a
-          href="https://github.com/open-book29" target="_blank"
+          href="https://github.com/open-book29"
+          target="_blank"
           className="bg-white p-4 text-gray-700 flex items-center text-[1.35rem] gap-2 rounded-full outline-none hover:scale-[1.15] active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60"
         >
           <FaGithubSquare />

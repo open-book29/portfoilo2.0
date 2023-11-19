@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import corpcommentImg from "@/public/cinemate.png";
+import rmtdevImg from "@/public/a.png";
+import wordanalyticsImg from "@/public/bubble.png";
 
 export const links = [
   {
@@ -35,52 +35,57 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+    title: "Bachelor of Technology - BTech",
+    location: "Shri Ramswaroop Memorial College of Engineering and Managment",
+    description: "Computer Science and Engineering",
+    grade: "Grade: 76%",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2018 - 2022",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+    title: "Front-End Developer Intern",
+    location: "Knocial ltd India, Gurgaon.",
+    description: "After i graduated from college i got an offer with knocial india pvt ltd for an  internship of 3 months",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2022 - 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "cerficate in Rect.js ",
+    location: "Udemy",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I received certification in react js and utilised my time in competitive coding and learning typescript, node.js, tailwind, etc.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Cinemate",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "A website for the cinephilles built using fetch API, having categorical selection menu according to preferences and changeable dark/light theme.",
+    tags: ["React","Tailwind","Javascript", "Fetch API" ],
     imageUrl: corpcommentImg,
+    gitUrl: "https://github.com/open-book29/Cinemate-react",
+    previewUrl: "https://cinemate-react-ul.netlify.app/"
   },
   {
-    title: "rmtDev",
+    title: "Codebook ecomerce",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "An e-commerce website for technical based education  content. User login and dashboard is enabled along with filtering,sorting and searching features.",
+    tags: ["React","Tailwind","Javascript", "Context API"],
     imageUrl: rmtdevImg,
+    gitUrl: "https://github.com/open-book29/e-commerce",
+    previewUrl: "https://ecommerce-codebook-ul.netlify.app/"
   },
   {
-    title: "Word Analytics",
+    title: "Bubble Game",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "A simple single player offline game, built using fundamental concepts of html, css and js.",
+    tags: ["HTML", "CSS", "Javascript"],
     imageUrl: wordanalyticsImg,
+    gitUrl: "https://github.com/open-book29/bubble-game",
+    previewUrl: "https://bubble-game-nu.vercel.app/"
   },
 ] as const;
 
@@ -91,17 +96,8 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "Bootstrap",
   "Framer Motion",
 ] as const;
