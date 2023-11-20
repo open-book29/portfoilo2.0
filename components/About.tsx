@@ -40,7 +40,7 @@ export const About = () => {
         <span className="italic">When I&apos;m not coding</span>, I enjoy playing
         video games, watching movies, and playing badminton. I also enjoy{" "}
         <span className="font-medium">learning new things</span>. I&apos;m currently
-        learning how to play the guitar.
+        learning how to play a guitar.
       </p>
     </motion.section>
   );

@@ -37,15 +37,14 @@ export const experiencesData = [
   {
     title: "Bachelor of Technology - BTech",
     location: "Shri Ramswaroop Memorial College of Engineering and Managment",
-    description: "Computer Science and Engineering",
-    grade: "Grade: 76%",
+    description: "Computer Science and Engineering, Grade: 76 CGPA",
     icon: React.createElement(LuGraduationCap),
     date: "2018 - 2022",
   },
   {
     title: "Front-End Developer Intern",
     location: "Knocial ltd India, Gurgaon.",
-    description: "After i graduated from college i got an offer with knocial india pvt ltd for an  internship of 3 months",
+    description: "After I graduated from college i got an offer with knocial india pvt ltd for an  internship of 3 months",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - 2023",
   },
