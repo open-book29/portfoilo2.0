@@ -14,7 +14,7 @@ export const ProjectItems = ({
   tags,
   imageUrl,
   gitUrl,
-  previewUrl
+  previewUrl,
 }: ProjectItmesProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -28,7 +28,7 @@ export const ProjectItems = ({
     <motion.div
       ref={ref}
       style={{ scale: scaleProgress, opacity: opacityProgress }}
-      className="group sm:pr-8 mb-3 sm:mb-8 last:mb-0"
+      className="group sm:pr-8 mb-3 sm:mb-8"
     >
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="z-10 items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-30 transition-all duration-500 ">

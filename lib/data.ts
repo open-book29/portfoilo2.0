@@ -4,7 +4,8 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/cinemate.png";
 import rmtdevImg from "@/public/a.png";
-import wordanalyticsImg from "@/public/bubble.png";
+import netflixImg from "@/public/netflix.png";
+import bubleImg from "@/public/bubble.png";
 
 export const links = [
   {
@@ -44,7 +45,8 @@ export const experiencesData = [
   {
     title: "Front-End Developer Intern",
     location: "Knocial ltd India, Gurgaon.",
-    description: "After I graduated from college i got an offer with knocial india pvt ltd for an  internship of 3 months",
+    description:
+      "After I graduated from college i got an offer with knocial india pvt ltd for an  internship of 3 months",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - 2023",
   },
@@ -60,31 +62,40 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Netflix Clone",
+    description:
+      "This project showcases my skills in building scalable, responsive applications with a focus on front-end interactivity, seamless user experiences, and efficient backend data management.",
+    tags: ["Tailwind", "Typescript", "React", "Nextjs", "Mongodb", "Prisma"],
+    imageUrl: netflixImg,
+    gitUrl: "https://github.com/open-book29/netflix-clone-final",
+    previewUrl: "https://endearing-khapse-27a623.netlify.app/",
+  },
+  {
     title: "Cinemate",
     description:
       "A website for the cinephilles built using fetch API, having categorical selection menu according to preferences and changeable dark/light theme.",
-    tags: ["React","Tailwind","Javascript", "Fetch API" ],
+    tags: ["React", "Tailwind", "Javascript", "Fetch API"],
     imageUrl: corpcommentImg,
     gitUrl: "https://github.com/open-book29/Cinemate-react",
-    previewUrl: "https://cinemate-react-ul.netlify.app/"
+    previewUrl: "https://cinemate-react-ul.netlify.app/",
   },
   {
     title: "Codebook ecomerce",
     description:
       "An e-commerce website for technical based education  content. User login and dashboard is enabled along with filtering,sorting and searching features.",
-    tags: ["React","Tailwind","Javascript", "Context API"],
+    tags: ["React", "Tailwind", "Javascript", "Context API"],
     imageUrl: rmtdevImg,
     gitUrl: "https://github.com/open-book29/e-commerce",
-    previewUrl: "https://ecommerce-codebook-ul.netlify.app/"
+    previewUrl: "https://ecommerce-codebook-ul.netlify.app/",
   },
   {
     title: "Bubble Game",
     description:
       "A simple single player offline game, built using fundamental concepts of html, css and js.",
-    tags: ["HTML", "CSS", "Javascript"],
-    imageUrl: wordanalyticsImg,
+    tags: ["Html", "css", "Javascript"],
+    imageUrl: bubleImg,
     gitUrl: "https://github.com/open-book29/bubble-game",
-    previewUrl: "https://bubble-game-nu.vercel.app/"
+    previewUrl: "https://bubble-game-nu.vercel.app/",
   },
 ] as const;
 
