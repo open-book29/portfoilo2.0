@@ -52,7 +52,7 @@ export const experiencesData = [
     date: "2022 - 2023",
   },
   {
-    title: "cerfication in Rect.js ",
+    title: "certification in Rect.js ",
     location: "Udemy",
     description:
       "I received certification in react js and utilised my time in competitive coding and learning typescript, node.js, tailwind, etc.",
