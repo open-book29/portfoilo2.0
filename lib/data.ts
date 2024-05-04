@@ -4,6 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/cinemate.png";
 import rmtdevImg from "@/public/a.png";
+import infiniteRippleImg from "@/public/Infinite Ripple.png";
 import netflixImg from "@/public/netflix.png";
 import bubleImg from "@/public/bubble.png";
 
@@ -38,7 +39,7 @@ export const experiencesData = [
   {
     title: "Bachelor of Technology - BTech",
     location: "Shri Ramswaroop Memorial College of Engineering and Managment",
-    description: "Computer Science and Engineering, Grade: 76 CGPA",
+    description: "Computer Science and Engineering, Grade: 7.6 CGPA",
     icon: React.createElement(LuGraduationCap),
     date: "2018 - 2022",
   },
@@ -51,7 +52,7 @@ export const experiencesData = [
     date: "2022 - 2023",
   },
   {
-    title: "cerficate in Rect.js ",
+    title: "cerfication in Rect.js ",
     location: "Udemy",
     description:
       "I received certification in react js and utilised my time in competitive coding and learning typescript, node.js, tailwind, etc.",
@@ -69,6 +70,15 @@ export const projectsData = [
     imageUrl: netflixImg,
     gitUrl: "https://github.com/open-book29/netflix-clone-final",
     previewUrl: "https://endearing-khapse-27a623.netlify.app/",
+  },
+  {
+    title: "Infinite Ripple",
+    description:
+      "The simple liquid distortion effect used in this web page applies a mesmerizing distortion effect to image, giving the illusion of a liquid-like behavior.",
+    tags: ["HTML", "CSS", "Javascript", "Shery js"],
+    imageUrl: infiniteRippleImg,
+    gitUrl: "https://github.com/open-book29/landing-page",
+    previewUrl: "https://landing-page-openbook.vercel.app/",
   },
   {
     title: "Cinemate",
